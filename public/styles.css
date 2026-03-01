@@ -1,0 +1,50 @@
+*{
+    color:whitesmoke;
+    font-size:x-large;
+}
+
+.btn{
+    background-color: #C5A059  !important;
+}
+
+.btn:hover{
+    background-color: #B8860B !important;
+}
+
+body{
+    background-color: #2B2B2B !important;
+    color:whitesmoke;
+    font-size:x-large;
+}
+
+table, .edit, .done, .bin, .btn-close{
+    background-color: #D2B48C !important; 
+    border: none;
+}
+
+h1{
+    font-family:"Metamorphous";
+}
+
+
+.edit::before{
+    content:"✏️";
+}
+
+/* .done::before{
+    content: "☐";
+}
+
+.done.complete::before {
+    content: "☑︎";
+} */
+
+.bin::before{
+    content:"🗑️";
+}
+
+@media (max-width: 600px) {
+    h1,h2,td{
+        font-size:5vw;
+    }
+}

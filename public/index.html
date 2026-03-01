@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metamorphous&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container py-3 mt-5 d-flex flex-row align-items-center">
+        <img src="assets/dnd-cc-logo-black.png" alt="Dungeons and Dragons Character Creator Logo" width = "400vw">
+        <header>
+            <h1>Dungeons and Dragons Character Creator</h1>
+        </header>
+    </div>
+
+    <div class="container text-center p-3 my-2 d-flex justify-content-center">
+        <button type="button" class="btn btn-lg text-white" id="newItemButton"
+        data-bs-toggle="modal" data-bs-target="#newItemModal">
+        Create a New Character +
+        </button>
+    </div>
+
+    <div class="modal fade h5" id="newItemModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title text-dark">New item</h5>
+        </div>
+        
+        <div class="modal-body">
+            <input type="text" id="newItem" class="form-control" placeholder="Enter a new item" required>
+        </div>
+
+        <div class="modal-footer">
+            <button type="button" id="saveButton" class="btn btn-primary" data-bs-dismiss="modal">
+                Save
+            </button>
+            <button type="button" id="closeButton" class="btn btn-secondary" data-bs-dismiss="modal">
+                Close
+            </button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="rounded h6 itemTable mx-auto my-5 col-11 col-md-6">
+        <table class="table rounded">
+        <tbody id="items">
+            <!-- pre-filled row to test functionality -->
+            <tr>
+            <!-- <td><button class="done"></button></td>
+            <td>Walk the dog</td>
+            <td><button class="edit" data-bs-toggle="modal" data-bs-target="#newItemModal"></button></td>
+            <td><button class="bin"></button></td> -->
+            </tr>
+        </tbody>
+        </table>
+    </div>
+
+    <script src="./script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"></script>
+
+</body>
+</html>
