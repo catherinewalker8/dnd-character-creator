@@ -1,5 +1,4 @@
 *{
-    color:whitesmoke;
     font-size:x-large;
 }
 
@@ -24,6 +23,7 @@ table, .edit, .done, .bin, .btn-close{
 
 h1{
     font-family:"Metamorphous";
+    color: whitesmoke;
 }
 
 

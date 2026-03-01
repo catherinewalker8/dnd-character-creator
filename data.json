@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "charName": "Baron Baratheon",
+    "charClass": "Paladin",
+    "charLevel": 3,
+    "charSpecies": "Dragonborn",
+    "charHp": 25,
+    "ac": 18,
+    "str": 16,
+    "dex": 12,
+    "con": 14,
+    "int": 10,
+    "wis": 12,
+    "cha": 14,
+    "inventory": "Greatsword, Plate Armor, Holy Symbol",
+    "notes": "Oath of Devotion. Searching for a lost relic of Bahamut."
+  }
+]

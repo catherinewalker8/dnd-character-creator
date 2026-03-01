@@ -27,14 +27,109 @@
     </div>
 
     <div class="modal fade h5" id="newItemModal" tabindex="-1">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-xl">
         <div class="modal-content">
         <div class="modal-header">
-            <h5 class="modal-title text-dark">New item</h5>
+            <h5 class="modal-title text-dark">New Character</h5>
         </div>
         
         <div class="modal-body">
-            <input type="text" id="newItem" class="form-control" placeholder="Enter a new item" required>
+
+            <div class="row mb-4">
+                <div class="col">
+                    <label for="charName" class="mb-2">Name</label>
+                    <input type="text" id="charName" class="form-control"required>
+                </div>
+                <div class="col">
+                    <label for="charSpecies" class="mb-2">Species</label>
+                    <select class="form-select" id="charSpecies">
+                    <option>Aasimar</option>
+                    <option>Dragonborn</option>
+                    <option>Dwarf</option>
+                    <option>Elf</option>
+                    <option>Gnome</option>
+                    <option>Goliath</option>
+                    <option>Halfling</option>
+                    <option>Human</option>
+                    <option>Orc</option>
+                    <option>Tiefling</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="charClass" class="mb-2">Class</label>
+                    <select class="form-select" id="charClass">
+                    <option>Barbarian</option>
+                    <option>Bard</option>
+                    <option>Cleric</option>
+                    <option>Druid</option>
+                    <option>Fighter</option>
+                    <option>Monk</option>
+                    <option>Paladin</option>
+                    <option>Ranger</option>
+                    <option>Rogue</option>
+                    <option>Sorcerer</option>
+                    <option>Warlock</option>
+                    <option>Wizard</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col">
+                    <label for="charLevel" class="mb-2">Level</label>
+                    <input type="number" class="form-control" max="20" id="charLevel" required>
+                </div>
+                <div class="col">
+                    <label for="charHp" class="mb-2">Hit Points</label>
+                    <input type="number" class="form-control" id="charHp" required>
+                </div>
+                <div class="col">
+                    <label for="charAc" class="mb-2">Armour Class</label>
+                    <input type="number" class="form-control" id="charAc" required>
+                </div>
+            </div>
+
+
+            <div class="row mb-4 text-center">
+                <div class="col">
+                    <label for="str" class="mb-2">Strength</label>
+                    <input type="number" class="form-control" id="str" required>
+                </div>
+                <div class="col">
+                    <label for="dex" class="mb-2">Dexterity</label>
+                    <input type="number" class="form-control" id="dex" required>
+                </div>
+                <div class="col">
+                    <label for="con" class="mb-2">Constitution</label>
+                    <input type="number" class="form-control" id="con" required>
+                </div>
+                <div class="col">
+                    <label for="int" class="mb-2">Intelligence</label>
+                    <input type="number" class="form-control" class="form-control" id="int" required>
+                </div>
+                <div class="col">
+                    <label for="wis" class="mb-2">Wisdom</label>
+                    <input type="number" class="form-control" id="wis" required>
+                </div>
+                <div class="col">
+                    <label for="cha" class="mb-2">Charisma</label>
+                    <input type="number" class="form-control" id="cha" required>
+                </div>
+            </div>
+
+
+            <div class="row mb-4">
+                <div class="col">
+                    <label for="inventory" class="mb-2">Inventory</label>
+                    <textarea id="inventory" class="form-control"></textarea>
+                </div>
+
+                <div class="col">
+                    <label for="notes" class="mb-2">Notes</label>
+                    <textarea id="notes" class="form-control"></textarea>
+                </div>
+            </div>
+
+            
         </div>
 
         <div class="modal-footer">
